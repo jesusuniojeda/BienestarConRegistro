@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>                          
+        <div class="container-titulo">
+            <h1 class="text-center mt-2 mb-0 py-3 bg-primary"> Bienestar para ti</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-secondary py-3"> 
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a> 
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Company</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <p class="text-center mt-5">
+            Bienvenido a nuestra tienda de bienestar. Aquí encontrarás una variedad de productos que te ayudarán a relajarte, meditar y crear un ambiente tranquilo en tu hogar.
+        </p>
+    </div>
+
+    <div class="container px-4 text-center">    
+        <div class="row gx-5">
+            <div class="col">
+                <div class="p-3 mt-5">
+                    <h2>Próxima Promoción</h2>
+                    <p class="text-start mt-4">Aprovecha nuestro próximo taller en línea: "Cómo encontrar la paz interior en tu hogar".
+                        Esperamos traer el evento más grande de bienestar, Medita Hoy, a Las Vegas en el Allegiant Stadium el 19 y 20 de abril de 2025.
+                        <br><br> Para más información sobre la preventa, visita: 
+                        <a target="_blank" href="https://www.meditacion.com/registrate.">https://meditacion.com/registrate</a>
+                    </p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-3 mt-5">
+                    <h2>MEDITA</h2>
+                    <img class="img mt-4" src="assets/meditation-session.jpeg" alt="Sesion de Meditacion">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container border border-dark mt-5 ROSTER">      
+        <div class="container px-4 text-center">
+            <div class="row gx-5">
+                <div class="col">
+                    <div class="p-3">
+                        <a target="_blank" class="btn-roster-smackdown" href="https://www.wwe.com/shows/difusor#:~:text=Get%20WWE%20Raw%20results%20&%20updates,">
+                            <img class="img-difusor-smackdown" src="assets/oil-diffuser.jpeg" alt="difusor">
+                        </a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="p-3">
+                        <a target="_blank" class="btn-roster-difusor" href="https://www.wwe.com/shows/smackdown">
+                            <img class="img-difusor-smackdown" src="assets/mujerenpaz.jpg" alt="meditacion">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 text-center">                
+        <div class="row gx-5">
+            <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+                <div class="p-3 cede">
+                    <h3 class="mt-5">¿Cómo te relajas?</h3>
+                    <p class="text-start mt-4">
+                        Si siempre has soñado con crear un espacio personal lleno de paz y serenidad, ¡este es tu momento!
+                        Regístrate a continuación y da el primer paso hacia una vida más armoniosa y llena de bienestar.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-6">
+                <div class="p-3 sign-up formulario">
+                    <h3 class="mt-5 text-white">SIGN-UP</h3>  
+                    <!-- Formulario de registro con campos adicionales -->
+                    <form id="register-form">
+                        <div class="row mb-4 mt-5">
+                            <label for="name" class="col-sm-2 col-form-label text-white">Nombre:</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Ingresa tu nombre" required>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label for="email" class="col-sm-2 col-form-label text-white">Email:</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Ingresa tu email" required>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label for="telefono" class="col-sm-2 col-form-label text-white">Teléfono:</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ingresa tu teléfono" required>
+                            </div>
+                        </div>
+                        <div class="row mb-4">
+                            <label for="password" class="col-sm-2 col-form-label text-white">Contraseña:</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa tu contraseña" required>
+                            </div>
+                        </div>
+                        <div class="row mb-4 justify-content-center">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-primary">Registrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container px-4 text-center">     
+        <div class="row gx-5 my-5">
+            <div class="col mt-5">
+                <div class="p-3">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d222941.29212801938!2d-118.40039583534617!3d33.96931692830452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c675b1247439%3A0xc8f1a31bec7b665!2sThe%20Wellness%20Center%20%40%20General%20Hospital!5e0!3m2!1ses-419!2sve!4v1727324288302!5m2!1ses-419!2sve" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="p-3 cede">
+                    <h4>Wellness Center</h4>
+                    <p class="text-start mt-4">
+                        Es tu refugio de paz y armonía. Encontrarás todo lo que necesitas para cuidar tu cuerpo, mente y espíritu. Desde productos diseñados para crear un ambiente de calma en tu hogar hasta herramientas para tu viaje de meditación.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="row g-0 text-center custom-row bg-secondary mt-5">     
+            <div class="col-6 col-md-3 pt-5">
+                <p>+500M facebook <br> <br> +220M Instagram <br><br> +160K Twitch</p>
+            </div>
+            <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5 ">
+                <a target="_blank" class="link-net" href="https://www.facebook.com/wwe">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                </a>
+                <a target="_blank" class="link-net" href="https://www.instagram.com/wwe">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M16.5 7.5l0 .01" />
+                    </svg>
+                </a>
+            </div>
+            <div class="col-6 col-md-3 bg-secondary pt-5">
+                <form class="d-flex mt-5 ms-3" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-dark" type="submit">Search</button>
+                </form>
+            </div>
+            <div class="col-6 col-md-3 bg-secondary pt-5">
+                <p class="ms-5 me-5">© [2024] Medita. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/form.js"></script>
+</body>
+
+</html>

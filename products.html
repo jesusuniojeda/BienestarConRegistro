@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Products</title>
+
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header> 
+        <div class="container-titulo">
+            <h1 class="text-center mt-2 mb-0 py-3 bg-primary"> Nuestros Productos</h1>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg bg-secondary py-3"> 
+        <div class="container">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a> 
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Products</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Company</a>
+                </li>
+                <div class="separator"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blogs</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container"> 
+        <p class="text-center mt-5">
+            Descubre nuestra selección de productos diseñados para ayudarte a alcanzar el equilibrio y la serenidad en tu día a día. Desde difusores de aceites esenciales hasta velas aromáticas y herramientas de meditación, cada artículo ha sido cuidadosamente seleccionado para apoyar tu bienestar.
+
+        </p>
+    </div>
+
+    <div class="container my-5">
+        <div class="row text-center">
+            <div class="col-md-4 pb-3">
+                <div class="card" onclick="showDetails(1)">
+                    <img src="assets/oil-diffuser.jpeg" class="card-img-top" alt="Imagen 1">
+                    <div class="card-body">
+                        <h5 class="card-title text-start">Difusor de Aceites Esenciales</h5>
+                        <p class="card-text">$300.00</p>
+                        <button class="btn btn-danger">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+                <div class="card" onclick="showDetails(2)">
+                    <img src="assets/meditation-mat.jpg" class="card-img-top" alt="Imagen 2">
+                    <div class="card-body">
+                        <h5 class="card-title text-start">Alfombra de Meditación</h5>
+                        <p class="card-text">$35.00</p>
+                        <button class="btn btn-danger">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-3">
+                <div class="card" onclick="showDetails(3)">
+                    <img src="assets/lavender-candle.jpeg" class="card-img-top" alt="Imagen 3">
+                    <div class="card-body">
+                        <h5 class="card-title text-start">Vela Aromática de Lavanda</h5>
+                        <p class="card-text">$25.00</p>
+                        <button class="btn btn-danger">Añadir al carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div id="details-box" class="details-box d-flex  pe-3">
+            <img id="details-img" src="" alt="Imagen detallada" class="img-fluid mb-3">
+            <div class="container text-center contiene">
+                <h5 id="details-title" ></h5>
+                <p id="details-description"></p>
+                <p id="details-price"></p>
+                <button id="details-button" class="btn btn-danger">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        const products = {
+            1: {
+                img: 'assets/oil-diffuser.jpeg',
+                title: 'Difusor de Aceites Esenciales',
+                description: 'Descripción del Producto 1.',
+                price: '$300.00',
+            },
+            2: {
+                img: 'assets/meditation-mat.jpg',
+                title: 'Alfombra de Meditación',
+                description: 'Descripción del Producto 2.',
+                price: '$35.00',
+            },
+            3: {
+                img: 'assets/lavender-candle.jpeg',
+                title: 'Vela Aromática de Lavanda',
+                description: 'Descripción del Producto 3.',
+                price: '$25.00',
+            },
+        };
+    
+        function showDetails(productId) {
+            const product = products[productId];
+            document.getElementById('details-img').src = product.img;
+            document.getElementById('details-title').innerText = product.title;
+            document.getElementById('details-description').innerText = product.description;
+            document.getElementById('details-price').innerText = product.price;
+            document.getElementById('details-box').style.display = 'flex'; 
+        }
+    </script>
+
+<footer>
+    <div class="row g-0 text-center custom-row  bg-secondary mt-5">   
+        <div class="col-6 col-md-3 pt-5">
+            <p>+500M facebook <br> <br> +220M Instagram <br><br> +160K Twitch</p>
+        </div>
+        <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5 ">
+            <a target="_blank" class="link-net" href="https://www.facebook.com/wwe">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-facebook">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                </svg>
+            </a>
+
+            <a target="_blank" class="link-net"  href="https://www.instagram.com/wwe">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" />
+                <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                <path d="M16.5 7.5l0 .01" />
+            </svg>
+            </a>
+
+            <a target="_blank" class="link-net" href="https://www.twitch.tv/wwe">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="mb-4 icon icon-tabler icons-tabler-outline icon-tabler-brand-twitch">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                        d="M4 5v11a1 1 0 0 0 1 1h2v4l4 -4h5.584c.266 0 .52 -.105 .707 -.293l2.415 -2.414c.187 -.188 .293 -.442 .293 -.708v-8.585a1 1 0 0 0 -1 -1h-14a1 1 0 0 0 -1 1z" />
+                    <path d="M16 8l0 4" />
+                    <path d="M12 8l0 4" />
+                </svg>
+            </a>
+        </div>
+        <div class="col-6 col-md-3  bg-secondary pt-5">
+            <form class="d-flex mt-5 ms-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-dark" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="col-6 col-md-3 bg-secondary pt-5">
+            <p class="ms-5 me-5">© [2024] Medita. Todos los derechos reservados. Este sitio y su contenido son
+                propiedad de Medita Inc.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>

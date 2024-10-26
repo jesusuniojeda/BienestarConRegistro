@@ -1,0 +1,126 @@
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+h4 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+}
+.separator {
+  border-left: 1px solid #c2b7e9;
+}
+
+.nav-item :hover {
+  text-decoration: underline;
+  color: purple;
+}
+
+.nav-item {
+  font-family: "Lato", sans-serif;
+}
+
+.img {
+  height: 280px;
+  width: 480px;
+}
+
+.img-raw-smackdown {
+  height: 150px;
+  width: 450px;
+  border: 5px solid black;
+}
+
+.sign-up {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 40px;
+}
+
+.cede{
+   margin-top: 60px;
+}
+
+footer{
+   width: 100%;
+}
+
+.link-net{
+   color: #c2b7e9;
+}
+
+.link-net :hover{
+      color: blue;
+}
+
+.container-titulo{
+  width: 100%;
+}
+
+.btn-roster-smackdown :hover{
+  border-color: lightblue;
+}
+
+.btn-roster-raw :hover{
+  border-color: purple;
+}
+
+.bg-primary {
+  background-color: #800080;
+}
+
+.formulario{
+  background-color: #3d1882;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  
+}
+
+.card {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+#details-box {
+  display: none;
+  margin-top: 20px;
+  border: 1px solid #c2b7e9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#details-img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover; 
+}
+ 
+.contiene{
+  padding-top: 80px;
+}
+
